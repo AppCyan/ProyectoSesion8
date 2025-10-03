@@ -56,7 +56,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
@@ -90,11 +90,12 @@ h2 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .tarjeta img {
@@ -111,6 +112,7 @@ h2 {
 
 .tarjeta p {
     margin: 0 15px 15px;
+    color: #777;
 }
 
 /* Consejos */
@@ -125,6 +127,12 @@ h2 {
     margin-bottom: 10px;
     border-radius: 8px;
     font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.consejos ul li:hover {
+    background-color: #ff7043;
+    color: white;
 }
 
 /* Formulario de contacto */
@@ -156,11 +164,12 @@ form button {
     font-size: 1em;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form button:hover {
     background-color: #e64a19;
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -181,10 +190,14 @@ footer {
     }
 
     .hero h2 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 1.1em;
+    }
+
+    .tarjeta {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 }
